@@ -84,6 +84,3 @@ module.exports.generateContent = async function (prompt) {
   
   return response.text
 }
-
-
-
