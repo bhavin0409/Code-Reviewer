@@ -24,7 +24,7 @@ function App() {
   const reviewCode = async () => {
     setReview("loading...")
 
-    const response = await axios.post("http://localhost:3000/ai/get-review" , {code})
+    const response = await axios.post("https://vercel.com/bhavin-prajapatis-projects-6b69156d/backend-code-review/ai/get-review" , {code})
 
     setReview(response.data );
     
