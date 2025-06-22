@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server : {
     proxy: {
-      '/ai' : 'https://backend-code-review.vercel.app/'
+      '/ai' : 'https://backend-code-review.vercel.app'
     }
   }
 })
