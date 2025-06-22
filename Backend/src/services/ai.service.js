@@ -7,8 +7,6 @@ module.exports.generateContent = async function (prompt) {
     model: "gemini-2.0-flash",
     systemInstruction:  `
         You're a senior software engineer. Review the following code and respond with a critique in this format:
-
-
         ❌ Bad Code:
         \`\`\`javascript
         [original code]
