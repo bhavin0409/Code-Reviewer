@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Editor from 'react-simple-code-editor'
 import "prismjs/themes/prism-tomorrow.css"
-import prism from "prismjs"
+import prism, { highlight } from "prismjs"
 import axios from 'axios'
 import Markdown from "react-markdown"
 import rehypeHighlight from "rehype-highlight"
@@ -22,9 +22,11 @@ function App() {
   }, [])
   
   const reviewCode = async () => {
+    setReview("loading...")
+
     const response = await axios.post("http://localhost:3000/ai/get-review" , {code})
 
-    setReview(response.data);
+    setReview(response.data );
     
   }
   
@@ -55,8 +57,8 @@ function App() {
         </div>
         <div className="right">
           <Markdown
-            rehypePlugins={[ rehypeHighlight ]}
-          >{review}</Markdown>
+          rehypePlugins={[ rehypeHighlight ]}
+          >{review || "Review Your code using Code Review."}</Markdown>
         </div>
       </main>
     </>
