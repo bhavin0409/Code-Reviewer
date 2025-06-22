@@ -5,7 +5,10 @@ require("dotenv").config()
 const aiRoutes = require("./routes/ai.route")
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://code-reviewer-theta-ten.vercel.app/',
+    credentials: true
+}))
 
 app.get("/" , (req , res) => {
     res.send("hello World")
