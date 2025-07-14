@@ -47,7 +47,7 @@ function App() {
                 borderRadius: '5px',
                 height: '100%',
                 width:"100%"
-
+                overflowY: 'auto', 
               }}
             />
           </div>
