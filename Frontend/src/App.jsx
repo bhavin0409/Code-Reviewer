@@ -32,6 +32,9 @@ function App() {
   
   return (
     <>
+      <div style={{display:'flex', justifyContent:'center' , alignItems: 'center'}}>
+        <img src="/public/logo.png" alt="Logo"  height={90} width={90}/>
+      </div>
       <main>
         <div className="left">
           <div className="code">
@@ -46,8 +49,7 @@ function App() {
                 border: '1px solid black',
                 borderRadius: '5px',
                 height: '100%',
-                width:"100%"
-                overflowY: 'auto', 
+                width:"100%", 
               }}
             />
           </div>
