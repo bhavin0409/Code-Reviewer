@@ -7,6 +7,7 @@ import axios from 'axios'
 import Markdown from "react-markdown"
 import rehypeHighlight from "rehype-highlight"
 import "highlight.js/styles/github-dark.css"
+import logo from '../public/Logo.png'
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <div style={{display:'flex', justifyContent:'center' , alignItems: 'center'}}>
-        <img src="/logo.png" alt="Logo"  height={90} width={90}/>
+        <img src={logo} alt="Logo"  height={90} width={90}/>
       </div>
       <main>
         <div className="left">
