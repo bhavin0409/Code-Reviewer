@@ -33,8 +33,8 @@ function App() {
   
   return (
     <>
-      <div style={{display:'flex', justifyContent:'center', paddingTop:12 , alignItems: 'center'}}>
-        <img src={logo} alt="Logo" height={40} width={60}/>
+      <div style={{display:'flex', justifyContent: "flex-start", paddingTop:12 , paddingLeft:30 , alignItems: 'center'}}>
+        <img src={logo} alt="Logo" height={40} width={60} style={{borderRadius:15}}/>
       </div>
       <main>
         <div className="left">
